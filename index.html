@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Weather Instantly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="flex items-center justify-center font-mono"
+  >
+    <div 
+    id="mainContainer"
+      class="bg-black rounded-lg w-1/2 bg-opacity-30 mt-10 flex-row px-12 py-6 pt-10"
+    >
+      <div
+        class="text-center text-5xl font-semibold animate-pulse"
+        style="color: #f0edee"
+      >
+        Get Weather
+      </div>
+      <div class="flex my-4 pt-2 text-xl items-center justify-center">
+        <input
+          id="inputCity"
+          class="pl-2 mr-4 py-2 border-none outline-none"
+          type="text"
+          placeholder="Enter City.."
+        />
+        <button
+          id="getWeatherButton"
+          class="w-44 bg-green-800 text-white px-5 py-2 hover:bg-black hover:text-green-800"
+        >
+    Fetch
+        </button>
+      </div>
+      <div id="weatherData">
+        <div id="icon" class="flex items-center justify-center">
+          <img
+            class="size-24 items-center justify-center"
+            src="http://openweathermap.org/img/wn/04d.png"
+            alt="Weather Icon"
+            alt=""
+          />
+        </div>
+        <div id="minMax" class="text-white text-center">--&deg;/--&deg;</div>
+        <div
+          id="temperature"
+          class="my-2 text-5xl font-semibold text-center"
+          style="color: #f0edee"
+        >
+          00&deg;C
+        </div>
+        <div
+          id="description"
+          class="my-2 text-2xl text-center text-zinc-500 pb-5"
+        >
+          Overcast Clouds
+        </div>
+        <div class="flex items-center justify-between">
+          <div
+            class="w-32 h-20 text-center rounded-sm px-2 py-2 bg-zinc-800 bg-opacity-50 text-white"
+          >
+            Feels like: <br />
+            <span id="feelsLike" class="font-semibold text-xl">00</span>
+          </div>
+          <div
+            class="w-32 h-20 text-center rounded-sm px-2 py-2 bg-zinc-800 bg-opacity-50 text-white"
+          >
+            Humidity: <br />
+            <span id="humidity" class="font-semibold text-xl">00%</span>
+          </div>
+          <div
+            class="w-32 h-20 text-center rounded-sm px-2 py-2 bg-zinc-800 bg-opacity-50 text-white"
+          >
+            Wind Speed: <br />
+            <span id="windSpeed" class="font-semibold text-xl">00 m/s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute text-white bottom-0 right-2">made by <span onclick="user1()" class="text-emerald-600 font-bold cursor-not-allowed animate-pulse">@User1</span></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

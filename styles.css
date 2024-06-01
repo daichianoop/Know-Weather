@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to top, #000000ff 6%, #2d4235 100%);
+  background-repeat: no-repeat;
+  background-color: black;
+  animation: bgChange 30s infinite ;
+}
